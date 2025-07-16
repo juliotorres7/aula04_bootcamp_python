@@ -2,29 +2,33 @@
 
 # 1 Crie uma lista com os números de 1 a 10 e use um loop para imprimir cada número elevado ao quadrado.
 
-lista_numeros = []
+# lista_numeros = []
 
-for i in range(11):
-    lista_numeros.append(i)
+# for i in range(11):
+#     lista_numeros.append(i)
 
-for j in lista_numeros:
-    print( j**2 )
+# for j in lista_numeros:
+#     print( j**2 )
 
 
 # 2 Dada a lista ["Python", "Java", "C++", "JavaScript"], remova o item "C++" e adicione "Ruby".
 
-linguagens = ["Python", "Java", "C++", "JavaScript"]
+# linguagens = ["Python", "Java", "C++", "JavaScript"]
 
-linguagens.append("Ruby")
+# linguagens.append("Ruby")
 
-linguagens.remove("C++")
+# linguagens.remove("C++")
 
-print(linguagens)
+# print(linguagens)
 
 
 # 3 Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de 
 # publicação. Imprima cada informação.
 
+livro = {"titulo": "1984", "autor": "George Orwell", "ano": 1949}
+
+for chave, valor in livro.items():
+    print(f"{chave}: {valor}")
 
 # 4 Escreva um programa que conta o número de ocorrências de cada caractere em uma string usando um dicionário.
 
