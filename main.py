@@ -7,10 +7,19 @@ lista_numeros = []
 for i in range(11):
     lista_numeros.append(i)
 
-for i in lista_numeros:
-    print(i)
+for j in lista_numeros:
+    print( j**2 )
+
 
 # 2 Dada a lista ["Python", "Java", "C++", "JavaScript"], remova o item "C++" e adicione "Ruby".
+
+linguagens = ["Python", "Java", "C++", "JavaScript"]
+
+linguagens.append("Ruby")
+
+linguagens.remove("C++")
+
+print(linguagens)
 
 
 # 3 Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de 
