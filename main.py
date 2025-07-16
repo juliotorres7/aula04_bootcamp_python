@@ -25,17 +25,29 @@
 # 3 Crie um dicionário para armazenar informações de um livro, incluindo título, autor e ano de 
 # publicação. Imprima cada informação.
 
-livro = {"titulo": "1984", "autor": "George Orwell", "ano": 1949}
+# livro = {"titulo": "1984", "autor": "George Orwell", "ano": 1949}
 
-for chave, valor in livro.items():
-    print(f"{chave}: {valor}")
+# for chave, valor in livro.items():
+#     print(f"{chave}: {valor}")
 
 # 4 Escreva um programa que conta o número de ocorrências de cada caractere em uma string usando um dicionário.
 
+# def contar_caracteres(s):
+#     contagem = {}
+#     for caractere in s:
+#         contagem[caractere] = contagem.get(caractere, 0) + 1
+#     return contagem
+
+# print(contar_caracteres("engenharia de dados"))
 
 # 5 Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65},
 # calcule o preço total da lista de compras.
 
+lista_de_compra = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+
+lista_de_preco = sum(lista_de_compra[item] for item in lista_de_compra)
+
+print(lista_de_preco)
 
 # Exercícios de Funções
 # 16 Escreva uma função que receba uma lista de números e retorne a soma de todos os números.
