@@ -43,15 +43,29 @@
 # 5 Dada a lista ["maçã", "banana", "cereja"] e o dicionário {"maçã": 0.45, "banana": 0.30, "cereja": 0.65},
 # calcule o preço total da lista de compras.
 
-lista_de_compra = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
+# lista_de_compra = {"maçã": 0.45, "banana": 0.30, "cereja": 0.65}
 
-lista_de_preco = sum(lista_de_compra[item] for item in lista_de_compra)
+# lista_de_preco = sum(lista_de_compra[item] for item in lista_de_compra)
 
-print(lista_de_preco)
+# print(lista_de_preco)
 
 # Exercícios de Funções
 # 16 Escreva uma função que receba uma lista de números e retorne a soma de todos os números.
 # 
+
+# lista_numeros = [1,2,3,4,5]
+
+
+
+def soma_valores(lista_numeros):
+    resultado = 0
+    for i in lista_numeros:
+        resultado += i
+    return print(resultado)
+
+
+soma_valores([87, 24, 56, 12, 99, 3, 74, 45, 61, 30])
+
 # 17 Crie uma função que receba um número como argumento e retorne True se o número 
 # for primo e False caso contrário.
 # 
