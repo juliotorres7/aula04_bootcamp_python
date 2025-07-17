@@ -55,19 +55,28 @@
 
 # lista_numeros = [1,2,3,4,5]
 
+# def soma_valores(lista_numeros):
+#     resultado = 0
+#     for i in lista_numeros:
+#         resultado += i
+#     return print(resultado)
 
 
-def soma_valores(lista_numeros):
-    resultado = 0
-    for i in lista_numeros:
-        resultado += i
-    return print(resultado)
-
-
-soma_valores([87, 24, 56, 12, 99, 3, 74, 45, 61, 30])
+# soma_valores([87, 24, 56, 12, 99, 3, 74, 45, 61, 30])
 
 # 17 Crie uma função que receba um número como argumento e retorne True se o número 
 # for primo e False caso contrário.
+
+def eh_primo(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return print(False)
+    return print(True)
+
+eh_primo(4)
+
 # 
 # 18 Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
 # 
