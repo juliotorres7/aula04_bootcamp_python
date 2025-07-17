@@ -89,14 +89,21 @@
 # A função deve retornar todas as combinações de pares na lista que somem ao número dado.
 
 
-def soma_combinação(lista,numero):
-    dicionario = {}
-    for each in lista:
-        dicionario[each] = each + numero
-    return print(dicionario)
+# def soma_combinação(lista,numero):
+#     dicionario = {}
+#     for each in lista:
+#         dicionario[each] = each + numero
+#     return print(dicionario)
 
-soma_combinação([1,2,3],2)
+# soma_combinação([1,2,3],2)
 
 # 
 # 20 Escreva uma função que receba um dicionário e retorne uma lista de chaves ordenadas
 
+
+def ordena_chaves(dicionario):
+    for i in dicionario:
+        chave_ordenada = sorted(dicionario.keys())
+    return print(chave_ordenada)
+
+ordena_chaves({2030:"julio",2020:"juliana",2010:"ana"})
