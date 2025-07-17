@@ -80,13 +80,23 @@
 # 18 Desenvolva uma função que receba uma string como argumento e retorne essa string revertida.
 # 
 
-def inverte_palavra(palavra):
-    print(palavra[::-1])
+# def inverte_palavra(palavra):
+#     print(palavra[::-1])
 
-inverte_palavra("julio")
+# inverte_palavra("julio")
 
 # 19 Implemente uma função que receba dois argumentos: uma lista de números e um número. 
 # A função deve retornar todas as combinações de pares na lista que somem ao número dado.
+
+
+def soma_combinação(lista,numero):
+    dicionario = {}
+    for each in lista:
+        dicionario[each] = each + numero
+    return print(dicionario)
+
+soma_combinação([1,2,3],2)
+
 # 
 # 20 Escreva uma função que receba um dicionário e retorne uma lista de chaves ordenadas
 
